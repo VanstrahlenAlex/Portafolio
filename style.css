@@ -5,6 +5,8 @@ body {
 
 :root {
     --main-color: white;
+    --second-color: lightgrey;
+    --menta-color: #8BF15F;
 }
 
 .bg {
@@ -43,10 +45,63 @@ footer {
     padding-bottom: 15px;
 }
 
+
+/* Presentación del proyecto*/
+
 .proyectos {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
 }
+
+.proyecto {
+    display: grid;
+    flex-direction: row;
+}
+
+.card-body {
+    width: auto;
+}
+
+
+/* Presentación del proyecto-- FIN*/
 
 .home {
     background-image: url(./images/web-development-t.jpg);
+}
+
+.barra {
+    color: var(--main-color);
+    text-align: center;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+}
+
+.enlace {
+    text-decoration: none;
+    color: var(--main-color);
+    size: 50px;
+}
+
+.linkedin,
+.github {
+    padding-bottom: 15px;
+    margin-right: 20px;
+}
+
+.perfil {
+    background-color: var(--main-color);
+    border-radius: 5px;
+    text-align: center;
+    margin: 15px;
+}
+
+
+/*Miperfil.html*/
+
+.descripcion {
+    background-color: var(--menta-color);
+    text-align: center;
+    text-decoration: dashed;
+    font-size: 20px;
 }
