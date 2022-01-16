@@ -3,10 +3,21 @@ body {
     background: lightgrey;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 :root {
-    --main-color: white;
+    --blanco: white;
     --second-color: lightgrey;
     --menta-color: #8BF15F;
+    --three-color: #5F5F5F;
 }
 
 .bg {
@@ -20,7 +31,7 @@ body {
 }
 
 .bg-text {
-    color: var(--main-color);
+    color: var(--blanco);
     font-weight: bold;
     border: 3px solid #f1f1f1;
     position: absolute;
@@ -37,7 +48,7 @@ body {
 footer {
     background: black;
     padding: 20px 0;
-    color: var(--main-color);
+    color: var(--blanco);
     margin-top: 40px;
 }
 
@@ -52,6 +63,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    overflow: scroll;
 }
 
 .proyecto {
@@ -66,42 +78,128 @@ footer {
 
 /* Presentación del proyecto-- FIN*/
 
+
+/*Footer*/
+
+.contacto-titulo {
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.contacto {
+    display: grid;
+    grid-template-columns: repeat(3, 25rem);
+    text-align: center;
+}
+
+
+/*Footer--FIN*/
+
 .home {
     background-image: url(./images/web-development-t.jpg);
 }
 
 .barra {
-    color: var(--main-color);
+    color: var(--blanco);
     text-align: center;
     padding: 10px 10px;
     margin-bottom: 15px;
+    text-decoration: none;
 }
 
 .enlace {
     text-decoration: none;
-    color: var(--main-color);
+    color: var(--blanco);
     size: 50px;
 }
 
 .linkedin,
+.correo-contacto,
 .github {
     padding-bottom: 15px;
     margin-right: 20px;
 }
 
 .perfil {
-    background-color: var(--main-color);
+    background-color: var(--blanco);
     border-radius: 5px;
     text-align: center;
     margin: 15px;
+    padding: 15px 15px;
 }
 
 
 /*Miperfil.html*/
 
 .descripcion {
+    display: grid;
+    grid-template-columns: 50% 50%;
     background-color: var(--menta-color);
     text-align: center;
     text-decoration: dashed;
     font-size: 20px;
+    border-radius: 20px;
+    padding: 10px 10px;
+    margin: 20px 20px;
+}
+
+.formacion {
+    margin: 0 200px;
+    padding: 20px 20px;
+}
+
+.accordion-body {
+    border-radius: 20px;
+}
+
+.titulo {
+    margin-bottom: 15px;
+}
+
+.titulo,
+.formacion-adicional {
+    background-color: var(--three-color);
+    border-radius: 15px;
+    padding: 10px 10px;
+}
+
+.foto-perfil {
+    background-color: var(--blanco);
+    border-radius: 20px;
+    border-style: var(--menta-color);
+}
+
+.foto-me {
+    border-radius: 20px;
+    border: solid 5px;
+}
+
+.nombre-perfil {
+    padding: 15px 15px;
+}
+
+.parrafo-perfil {
+    text-align: center;
+    align-items: center;
+    padding: 15px 15px;
+    margin: 15px 15px;
+}
+
+.text-educacion {}
+
+
+/*Formación*/
+
+.descripcion-experiencia {
+    background-color: var(--three-color);
+    padding: 15px 15px;
+    border-radius: 15px;
+}
+
+.descripcion-profesional {
+    background-color: var(--menta-color);
+    padding: 15px 15px;
+    border-radius: 25px;
+    margin: 15px 15px;
+    color: black;
 }
