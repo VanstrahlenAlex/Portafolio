@@ -154,6 +154,7 @@ footer {
 
 .titulo {
     margin-bottom: 15px;
+    color: var(--blanco);
 }
 
 .titulo,
@@ -194,6 +195,7 @@ footer {
     background-color: var(--three-color);
     padding: 15px 15px;
     border-radius: 15px;
+    color: var(--blanco);
 }
 
 .descripcion-profesional {
@@ -201,5 +203,5 @@ footer {
     padding: 15px 15px;
     border-radius: 25px;
     margin: 15px 15px;
-    color: black;
+    color: var(--blanco);
 }
